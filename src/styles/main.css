@@ -1,0 +1,509 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    font-size: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#about,
+#contact {
+    display: none
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    overflow-x: hidden;
+}
+
+.home {
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+}
+
+#mainNav {
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 3rem 0;
+    z-index: 999;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+}
+
+.container {
+    width: 1337px;
+    height: 100%;
+    /*padding-bottom: 5%; */
+}
+
+.banner {
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: auto;
+}
+
+.banner-image {
+    margin-left: 15%;
+    flex: 0;
+}
+
+.banner-text {
+    display: inline-block;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.text-white {
+    color: #fff;
+}
+
+nav ul.nav-list {
+    display: flex;
+    list-style: none;
+}
+
+nav ul.nav-list li.nav-item {
+    margin: 0 2.5rem;
+}
+
+nav ul.nav-list li.nav-item a.nav-link {
+    text-decoration: none;
+    font-size: 1.75rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    transition: all .2s ease-in-out;
+    color: #fff;
+}
+
+nav ul.nav-list li.nav-item a.nav-link:hover {
+    transform: scale(2);
+}
+
+
+.content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#header-text {
+    margin-top: 5rem;
+    color: #fff;
+    letter-spacing: 2px;
+    flex: 1
+}
+
+#header-text h1 {
+    font-size: calc(5rem + 4vw);
+    font-weight: 500;
+    color: white;
+    font-family: 'Satisfy', cursive;
+}
+
+#header-text span {
+    margin-left: 10rem;
+    margin-top: 0rem;
+}
+
+#overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: flex;
+}
+
+#overlay .layer {
+    background-color: white;
+}
+
+#overlay .layer1 {
+    flex: 1;
+}
+
+#overlay .layer2 {
+    flex: 1;
+}
+
+#overlay .layer3 {
+    flex: 1;
+}
+
+
+/* Journey CSS */
+
+.timeline {
+    align-items: center;
+    display: flex;
+    max-width: 100%;
+  
+  }
+  
+  .outer {
+    border-left: 0.75px solid white;
+  }
+  
+  .timeline .card {
+    position: relative;
+    margin: 0 0 20px 20px;
+    padding: 5px 5px 20px 10px;
+    background: rgba(255, 255, 255, 0.17);
+    color: rgba(255, 255, 255, 0.556);
+    border-radius: 2px;
+  }
+  
+  .info {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .timeline-card {
+    color: rgba(255, 255, 255, 0.87);
+    position: relative;
+    padding: 0px 5px 5px 5px;
+    font-size: 1.50em;
+  }
+  
+  .timeline-description {
+    font-size: 1.2em;
+    padding: 0px 5px 5px 5px;
+  }
+  
+  .timeline-card::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 9px;
+    left: -36px;
+    border: 1px solid white;
+  }
+
+  /* Skills and About CSS */
+
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+.left-frame {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #0c725a);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  /* width: 50%; */
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  ;
+  color: white;
+  display: inline-block;
+  /* align-items: center;  */
+  /* padding-left: 30px; */
+  padding: 20px;
+  margin-top: 30px;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.right-frame {
+  align-items: center;
+  width: 90%;
+  color: white;
+}
+
+#about {
+  display: relative;
+  min-height: 80vh;
+}
+
+.aboutHeader {
+  text-align: center;
+  color: #61a6df;
+  margin-top: 4%;
+  padding: 0;
+  font-size: 2.5em;
+}
+
+.additionalTitle {
+  text-align: center;
+  color: white;
+  font-size: 3.75em;
+}
+
+.mx-10 {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.text-left {
+  text-align: left;
+  margin-left: 35px;
+}
+
+.dividedInfo {
+  color: rgba(255, 255, 255, 0.591);
+  font-size: 1.75em;
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+  margin-bottom: 70px;
+}
+
+.left-section {
+  color: rgba(255, 255, 255, 0.591);
+  padding-right: 3%;
+}
+
+.additionalDetails {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.right-section {
+  color: rgba(255, 255, 255, 0.591);
+  padding-left: 3%;
+}
+
+.header {
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  font-size: 1.75em;
+}
+
+.details {
+  font-size: 1.50em;
+}
+
+.details-list {
+  font-size: 1.25em;
+  color: rgba(255, 255, 255, 0.591);
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+
+.my-4 {
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+
+.orange>.python {
+  background-image: linear-gradient(#f1a165, #f36d0a);
+}
+
+.python {
+  width: 80%;
+}
+
+.js {
+  width: 90%;
+}
+
+.c {
+  width: 80%;
+}
+
+.ts {
+  width: 90%;
+}
+
+.react {
+  width: 80%;
+}
+.java{
+  width: 30%;
+}
+
+.purple>.ts {
+  background-color: #7e78d2;
+}
+
+.green>.c {
+  background-color: #79aea3;
+}
+.coral>.java{
+  background-color: #f04248;
+}
+a {
+  color: white;
+}
+
+.blue>.js {
+  background-color: #61a6df;
+}
+
+.yellow>.react {
+  background-color: #FCC222;
+}
+
+.nostripes>span>span,
+.nostripes>span::after {
+  background-image: none;
+}
+
+.meter {
+  box-sizing: content-box;
+  height: 6px;
+  /* Can be anything */
+  position: relative;
+  margin: 5px 0 20px 0;
+  /* Just for demo spacing */
+  background: #555;
+  border-radius: 5px;
+  box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+}
+
+.meter>span {
+  display: block;
+  height: 100%;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: rgb(43, 194, 83);
+  background-image: linear-gradient(center bottom,
+      rgb(43, 194, 83) 37%,
+      rgb(84, 240, 84) 69%);
+  box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3),
+    inset 0 -2px 6px rgba(0, 0, 0, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Contact CSS */
+
+#contact {
+    margin-top: 30px;
+  }
+  
+  .project-header-box {
+    width: 450px;
+    border: 2px solid white;
+    margin: auto;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .project-header {
+    color: white;
+    font-size: 1rem;
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(44, 41, 41, 0.708);
+    transition: 0.3s;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.2);
+  }
+  
+  .flex-display {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .icons-center {
+    margin: auto;
+  }
+  
+  .contact-icon {
+    align-items: center;
+    font-size: 3em;
+    margin: 4px;
+  }
+  
+  .contact-details {
+    margin-top: 20px;
+  }
+  
+  .mt-2 {
+    margin-top: 2px;
+  }
+  
+   /* Responsive CSS */
+   @media only screen and (max-width: 1100px){
+    .svg-image{
+        display: none;
+     }
+     .container{
+        width: 100%;
+    }
+     .banner-text{
+        margin:auto;
+        text-align: center;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+   
+    .additionalDetails{
+        display: block;
+    }
+
+    .right-section{
+        display: inline-block;
+    }
+    .additionalTitle{
+        font-size: 1.75em;
+    }
+    .dividedInfo{
+        font-size: small;
+    }
+    .project-header-box {
+        width: 350px;
+        border: 2px solid white;
+        margin: auto;
+      }
+      
+}
+
+@media only screen and (max-width: 350px) {
+    .project-header-box {
+        width: 200px;
+        border: 2px solid white;
+        margin: auto;
+      }
+      .project-header {
+        font-size: 0.75rem;
+      }
+      
+}
