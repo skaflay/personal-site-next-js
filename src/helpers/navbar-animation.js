@@ -14,9 +14,9 @@ const FadeInAnimation = ({
       opacity: 0,
       delay:1.2,
       onComplete: () => {
-        // document.querySelector('#about').style.display = "block";
-        // document.querySelector('#contact').style.display = "block"
-        
+        document.querySelector('.about').style.display = "block";
+        document.querySelector('.contact').style.display = "block"
+        document.querySelector('#overlay-component').style.display = "none"
       }
     });
   }, [compRef, fadeDirection]);
