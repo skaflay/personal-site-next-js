@@ -495,6 +495,14 @@ a {
       }
       
 }
+.project-header-box {
+        width: 350px;
+        border: 2px solid white;
+        margin: auto;
+      }
+      
+}
+
 
 @media only screen and (max-width: 350px) {
     .project-header-box {
